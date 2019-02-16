@@ -10,47 +10,56 @@
     <h1>Sign Up</h1>
     
     <form>
+        <div>
+            <label for="Name">Name:</label>
+            <input type="text" id="Name" placeholder="John" required>
+            <label for="Surname">Surname:</label>
+            <input type="text" id="Surname" placeholder="Smith" required>
+        </div>
+
+
+        <div>
+            <label for="Male">Male:</label>
+            <input type="radio" name="Gender" id="Male" value="Male">
+            <label for="Female">Female:</label>
+            <input type="radio" name="Gender" id="Female" value="Female">
+            <label for="Other">Other:</label>
+            <input type="radio" name="Gender" id="Other" value="Other">
+        </div>
         
-        <label for="Name">Name:</label>
-        <input type="text" id="Name" placeholder="John" required>
-        <label for="Surname">Surname:</label>
-        <input type="text" id="Surname" placeholder="Smith" required>
-         <br/>
-         
-         <label for="Male">Male:</label>
-         <input type="radio" name="Gender" id="Male" value="Male">
-         <label for="Female">Female:</label>
-         <input type="radio" name="Gender" id="Female" value="Female">
-         <label for="Other">Other:</label>
-         <input type="radio" name="Gender" id="Other" value="Other">
-         <br/>
+        <div>
+            <label for="Email">Email:</label>
+            <input type="email" id="Email" placeholder="Email" required>
+            <label for="Password">Password:</label>
+            <input type="password" id="Password" placeholder="password" minlength="5" maxlength="10" required>
+        </div>
 
-        <label for="Email">Email:</label>
-        <input type="email" id="Email" placeholder="Email" required>
-        <label for="Password">Password:</label>
-        <input type="password" id="Password" placeholder="password" minlength="5" maxlength="10" required>
-        <br/>
-
-        Birthday: 
-        <select name="Month" id="Month" required>
+        <div>
+            Birthday: 
+            <select name="Month" id="Month" required>
             <option value="select" aria-placeholder="month">month</option>
             <option value="Nov">Nov</option>
-        </select>
-        <select name="Day" id="Day" required>
+            </select>
+            <select name="Day" id="Day" required>
             <option value="select" aria-placeholder="day">day</option>
             <option value="24">24</option>
-        </select>
-        <select name="Year" id="Year" required>
+            </select>
+            <select name="Year" id="Year" required>
             <option value="select" aria-placeholder="year">year</option>
             <option value="1999">1999</option>
-        </select>
-        <br/>
+            </select>
+        </div>
 
-        <label for="terms">I agree to the terms and conditions</label>
-        <input type="checkbox" name="terms" required>
-        <br/>
+        
+        <div>
+            <label for="terms">I agree to the terms and conditions</label>
+            <input type="checkbox" name="terms" required>
+        </div>
 
-        <button>submit</button>
+        <div>
+            <button>submit</button>
+        </div>
+        
     </form>
 </body>
 </html>
